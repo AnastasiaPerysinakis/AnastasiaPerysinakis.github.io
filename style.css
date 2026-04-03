@@ -125,7 +125,7 @@ nav a.active {
   border-radius: 2px;
   background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.16)),
-    url("aroomofonesown.jpg");
+    url("images/aroomofonesown.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 38%;
