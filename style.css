@@ -148,7 +148,7 @@ nav a.active {
 
 .section h2 {
   font-size: 18px;
-  margin: 24px 0 6px 0;
+  margin: 24px 0 8px 0;
   color: #4a5059;
   font-weight: 600;
 }
@@ -160,9 +160,9 @@ nav a.active {
 }
 
 .section ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0 0 18px 0;
+  list-style: disc;
+  padding-left: 20px;
+  margin: 2px 0 18px 0;
 }
 
 .section li {
@@ -170,6 +170,7 @@ nav a.active {
   line-height: 1.55;
   color: #6a717a;
   margin: 0 0 14px 0;
+  padding-left: 2px;
 }
 
 .section li strong {
@@ -192,15 +193,9 @@ nav a.active {
 }
 
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(220px, 1fr));
-  gap: 22px;
-  max-width: 900px;
-}
-
-.photo-grid {
   column-count: 2;
   column-gap: 16px;
+  max-width: 900px;
 }
 
 .photo-grid img {
@@ -209,12 +204,6 @@ nav a.active {
   display: block;
   margin-bottom: 16px;
   break-inside: avoid;
-}
-
-@media (max-width: 900px) {
-  .photo-grid {
-    column-count: 1;
-  }
 }
 
 @media (max-width: 900px) {
@@ -244,6 +233,6 @@ nav a.active {
   }
 
   .photo-grid {
-    grid-template-columns: 1fr;
+    column-count: 1;
   }
 }
