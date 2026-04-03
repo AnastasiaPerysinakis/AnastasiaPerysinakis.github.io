@@ -200,14 +200,21 @@ nav a.active {
 
 .photo-grid {
   column-count: 2;
-  column-gap: 22px;
+  column-gap: 16px;
 }
 
 .photo-grid img {
   width: 100%;
   height: auto;
-  margin-bottom: 22px;
   display: block;
+  margin-bottom: 16px;
+  break-inside: avoid;
+}
+
+@media (max-width: 900px) {
+  .photo-grid {
+    column-count: 1;
+  }
 }
 
 @media (max-width: 900px) {
